@@ -1,16 +1,20 @@
 <template>
-  <div class="contact">
-    联系方式
-  </div>
+  <header class="header">
+    <nav-menu></nav-menu>
+  </header>
 </template>
 
 <script>
+import NavMenu from '@/components/NavMenu'
+
 export default {
-  name: 'contact',
+  name: 'header',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    NavMenu
   }
 }
 </script>

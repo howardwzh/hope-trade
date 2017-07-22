@@ -1,15 +1,14 @@
 <template>
-  <div class="contact">
-    联系方式
-  </div>
+  <footer class="footer">
+    <p>这里是底部网站信息</p>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'contact',
+  name: 'footer',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
