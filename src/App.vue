@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-menu></nav-menu>
+    <nav-menu :route-path="routePath"></nav-menu>
     <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
@@ -11,6 +11,14 @@ import NavMenu from '@/components/NavMenu'
 
 export default {
   name: 'app',
+  created () {
+    this.$data.routePath = this.$route.path
+  },
+  data () {
+    return {
+      routePath: ''
+    }
+  },
   components: {
     NavMenu
   }

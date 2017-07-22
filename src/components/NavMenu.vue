@@ -12,6 +12,25 @@
 <script>
 export default {
   name: 'nav-menu',
+  created () {
+    switch (this.routePath) {
+      case '/':
+        this.$data.activeIndex = '1'
+        break
+      case '/list':
+        this.$data.activeIndex = '2'
+        break
+      case '/about':
+        this.$data.activeIndex = '3'
+        break
+      case '/contact':
+        this.$data.activeIndex = '4'
+        break
+    }
+  },
+  props: [
+    'routePath'
+  ],
   data () {
     return {
       activeIndex: '1'
