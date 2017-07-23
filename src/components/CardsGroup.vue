@@ -59,4 +59,7 @@ export default {
 .clearfix:after {
     clear: both
 }
+.cards-group {
+  overflow: hidden;
+}
 </style>
