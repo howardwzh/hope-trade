@@ -1,7 +1,7 @@
 <template>
   <div class="cards-group">
     <el-row :gutter="10">
-      <el-col :xs="8" :sm="6" :md="6" :lg="4" v-for="(o, index) in 4" :key="o">
+      <el-col :xs="12" :sm="6" :md="6" :lg="6" v-for="(o, index) in 4" :key="o">
         <el-card :body-style="{ padding: '0px' }">
           <img src="../assets/images/hamburger.50e4091.png" class="image">
           <div style="padding: 14px;">
